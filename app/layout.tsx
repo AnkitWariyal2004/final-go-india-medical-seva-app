@@ -1,3 +1,4 @@
+import "./globals.css";
 export const metadata = {
   title: "Go India & Medical Seva Apps",
   description:
