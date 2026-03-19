@@ -29,7 +29,7 @@ export default function HorizontalScroll({ children }: any) {
   return (
     <div
       ref={scrollRef}
-      className="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth"
+      className="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth no-scrollbar"
     >
       {children}
     </div>

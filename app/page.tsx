@@ -240,42 +240,49 @@
 //   );
 // }
 
+
+
+
+
+
+
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import HorizontalScroll from "./components/HorizontalScroll";
+import { FaShieldAlt, FaBolt, FaHeadset } from "react-icons/fa";
 
 export default function Home() {
   return (
     <main className="bg-[#f8fafc] text-[#0f172a]">
+
       <Navbar />
 
       {/* HERO */}
       <section id="home" className="pt-28 pb-20">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Smart Digital Solutions for
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              One Platform for
               <span className="text-blue-600"> Travel & Healthcare</span>
             </h1>
 
-            <p className="text-gray-600 mb-6">
-              We are a partnership-driven company delivering innovative digital
-              services through two powerful applications. Our goal is to
-              simplify daily life by combining essential services into one
-              ecosystem.
+            <p className="text-gray-600 mb-4">
+              We are a partnership-based company delivering two powerful digital
+              applications designed to simplify everyday life.
             </p>
 
             <p className="text-gray-600 mb-6">
-              <b>Go India</b> helps users plan and manage their travel
-              efficiently, while <b>Medical Seva</b> ensures quick access to
-              healthcare services.
+              <b>Go India</b> helps you plan and manage your travel efficiently,
+              while <b>Medical Seva</b> provides instant access to healthcare services.
+              Together, we bring convenience, speed, and reliability in one ecosystem.
             </p>
 
             <div className="flex gap-4">
               <button className="bg-blue-600 text-white px-6 py-3 rounded-lg">
                 Explore Apps
               </button>
-              <button className="border border-gray-300 px-6 py-3 rounded-lg">
+              <button className="border px-6 py-3 rounded-lg">
                 Learn More
               </button>
             </div>
@@ -283,7 +290,7 @@ export default function Home() {
 
           <Image
             src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
-            alt="apps"
+            alt="platform"
             width={600}
             height={400}
             className="rounded-xl shadow-lg"
@@ -291,21 +298,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* COMPANY INFO */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto text-center px-6">
+      {/* COMPANY */}
+      <section className="py-20 bg-white text-center">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-6">About Our Partnership</h2>
 
           <p className="text-gray-600 mb-4">
-            Our company is built on collaboration and innovation. By combining
-            expertise in both travel and healthcare, we aim to provide seamless
-            digital solutions that improve everyday life.
+            Our company is built on the idea of combining essential services into one
+            powerful ecosystem. By merging travel and healthcare, we aim to simplify
+            everyday needs using technology.
           </p>
 
           <p className="text-gray-600">
-            We believe in technology that is simple, accessible, and impactful.
-            With our platforms, users can manage essential services without
-            hassle.
+            We focus on reliability, accessibility, and user experience, ensuring that
+            our platforms are easy to use and deliver real value to users.
           </p>
         </div>
       </section>
@@ -313,6 +319,7 @@ export default function Home() {
       {/* GO INDIA */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6">
+
           <Image
             src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
             alt="travel"
@@ -327,50 +334,49 @@ export default function Home() {
             </h2>
 
             <p className="text-gray-600 mb-4">
-              Go India is designed to make travel easier and more enjoyable.
-              From booking tickets to exploring destinations, everything is
-              available in one place.
+              Go India is your all-in-one travel solution that helps you plan,
+              book, and explore destinations across India.
             </p>
 
             <p className="text-gray-600 mb-4">
-              Whether you are planning a short trip or a long vacation, Go India
-              provides tools and recommendations to help you travel smarter.
+              Whether you are planning a vacation or a business trip, the platform
+              provides smart tools and recommendations to make your journey smooth.
             </p>
 
             <ul className="space-y-2">
-              <li>✔ Book flights, trains, and buses</li>
-              <li>✔ Discover top destinations</li>
-              <li>✔ Get hotel and tour deals</li>
-              <li>✔ Easy and user-friendly interface</li>
+              <li>✔ Flight, Train & Bus Booking</li>
+              <li>✔ Hotel & Tour Packages</li>
+              <li>✔ Destination Discovery</li>
+              <li>✔ Smart Travel Planning</li>
             </ul>
           </div>
         </div>
       </section>
 
-      {/* MEDICAL SEVA */}
+      {/* MEDICAL */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6">
+
           <div>
             <h2 className="text-2xl font-bold text-blue-600 mb-4">
               Medical Seva – Healthcare Anytime
             </h2>
 
             <p className="text-gray-600 mb-4">
-              Medical Seva connects users with healthcare professionals and
-              services instantly. It is designed to provide quick and reliable
-              medical support.
+              Medical Seva connects you with trusted healthcare services quickly
+              and efficiently.
             </p>
 
             <p className="text-gray-600 mb-4">
-              From doctor consultations to medicine delivery, everything is
-              available at your fingertips, ensuring convenience and safety.
+              From doctor consultations to medicine delivery, everything is designed
+              to provide convenience and safety.
             </p>
 
             <ul className="space-y-2">
-              <li>✔ Online doctor consultation</li>
-              <li>✔ Medicine delivery at home</li>
-              <li>✔ Health checkup bookings</li>
-              <li>✔ Digital reports and records</li>
+              <li>✔ Online Doctor Consultation</li>
+              <li>✔ Medicine Delivery</li>
+              <li>✔ Health Checkups</li>
+              <li>✔ Digital Reports</li>
             </ul>
           </div>
 
@@ -384,6 +390,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* EXPERIENCE */}
+      <section className="py-20">
+        <h2 className="text-3xl font-bold text-center mb-12">
+          App Experience
+        </h2>
+
+        <div className="max-w-7xl mx-auto px-6">
+          <HorizontalScroll>
+            {[1,2,3,4].map((i) => (
+              <div key={i} className="min-w-[260px] bg-white p-4 rounded-xl shadow">
+                <Image
+                  src="https://images.unsplash.com/photo-1551650975-87deedd944c3"
+                  width={300}
+                  height={500}
+                  alt="app"
+                  className="rounded-lg"
+                />
+              </div>
+            ))}
+          </HorizontalScroll>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
       <section className="py-20 bg-white">
         <h2 className="text-3xl font-bold text-center mb-12">
           What Our Users Say
@@ -392,120 +422,61 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <HorizontalScroll>
             {[
-              {
-                name: "Rahul Sharma",
-                text: "Go India made my travel planning super easy and smooth.",
-              },
-              {
-                name: "Priya Verma",
-                text: "Medical Seva helped me get doctor consultation instantly.",
-              },
-              {
-                name: "Amit Singh",
-                text: "Very reliable apps, both travel and healthcare in one place.",
-              },
-              {
-                name: "Neha Gupta",
-                text: "Loved the UI and fast services. Highly recommended.",
-              },
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="min-w-[280px] bg-gray-50 p-6 rounded-xl shadow"
-              >
-                <p className="text-gray-600 mb-4">"{item.text}"</p>
-                <h4 className="font-bold">{item.name}</h4>
+              "Amazing travel experience with Go India.",
+              "Medical Seva is very helpful in emergencies.",
+              "Both apps are easy to use and reliable.",
+              "Great service and fast support.",
+            ].map((text, i) => (
+              <div key={i} className="min-w-[300px] bg-gray-50 p-6 rounded-xl shadow">
+                <p className="text-gray-600 mb-4">{text}</p>
+                <h4 className="font-bold">User {i + 1}</h4>
               </div>
             ))}
           </HorizontalScroll>
         </div>
       </section>
 
-      {/* SCREENSHOT SECTION */}
-      <section className="py-20">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          App Screenshots
-        </h2>
-
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-6">
-          {/* Replace these with your real screenshots */}
-          <div className="bg-white p-4 rounded-xl shadow">
-            <Image
-              src="https://images.unsplash.com/photo-1551650975-87deedd944c3"
-              alt="app"
-              width={300}
-              height={500}
-              className="rounded-lg"
-            />
-          </div>
-
-          <div className="bg-white p-4 rounded-xl shadow">
-            <Image
-              src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
-              alt="app"
-              width={300}
-              height={500}
-              className="rounded-lg"
-            />
-          </div>
-
-          <div className="bg-white p-4 rounded-xl shadow">
-            <Image
-              src="https://images.unsplash.com/photo-1580910051074-3eb694886505"
-              alt="app"
-              width={300}
-              height={500}
-              className="rounded-lg"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* FEATURES */}
       <section className="py-20 bg-blue-50">
-        <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
-
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-6">
-          {[
-            "User Friendly Experience",
-            "Secure & Trusted Platform",
-            "Fast & Reliable Services",
-          ].map((item, i) => (
-            <div key={i} className="bg-white p-6 rounded-xl shadow text-center">
-              <h3 className="font-bold text-lg">{item}</h3>
-              <p className="text-gray-500 mt-2">
-                Designed to deliver the best experience to our users.
-              </p>
-            </div>
-          ))}
+
+          <div className="bg-white p-6 rounded-xl shadow text-center">
+            <FaBolt className="mx-auto text-blue-600 text-3xl mb-3"/>
+            <h3 className="font-bold">Fast Services</h3>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow text-center">
+            <FaShieldAlt className="mx-auto text-green-600 text-3xl mb-3"/>
+            <h3 className="font-bold">Secure Platform</h3>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow text-center">
+            <FaHeadset className="mx-auto text-purple-600 text-3xl mb-3"/>
+            <h3 className="font-bold">24/7 Support</h3>
+          </div>
+
         </div>
       </section>
 
       {/* CONTACT */}
-      <section
-        id="contact"
-        className="py-20 bg-gradient-to-r from-blue-600 to-sky-500 text-white"
-      >
-        <div className="max-w-5xl mx-auto text-center px-6">
-          <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-sky-500 text-white text-center">
+        <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
 
-          <p className="mb-6">
-            We are always here to help you. Reach out for support, queries, or
-            partnerships.
-          </p>
+        <p className="mb-6">
+          Reach out for support, queries or partnerships.
+        </p>
 
-          <div className="grid md:grid-cols-3 gap-6 text-sm">
-            <div>📧 contact@dualapps.com</div>
-            <div>📞 +91 9876543210</div>
-            <div>📍 India</div>
-          </div>
+        <div className="flex flex-col md:flex-row justify-center gap-6">
+          <div>📧 contact@dualapps.com</div>
+          <div>📞 +91 9876543210</div>
+          <div>📍 India</div>
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer className="py-6 text-center text-gray-500">
-        © 2026 DualApps. All rights reserved.
+        © 2026 DualApps
       </footer>
+
     </main>
   );
 }
