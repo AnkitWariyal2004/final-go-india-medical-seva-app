@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-black rounded-lg"></div>
           <h1 className="font-semibold text-lg tracking-wide">
-            DualApps
+            Turbuddy
           </h1>
         </div>
 

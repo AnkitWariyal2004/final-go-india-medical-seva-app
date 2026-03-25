@@ -26,7 +26,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
           {/* BRAND */}
           <div>
-            <h3 className="text-white text-xl font-bold mb-4">DualApps</h3>
+            <h3 className="text-white text-xl font-bold mb-4">Trubuddy</h3>
             <p className="text-gray-400 leading-relaxed">
               We build digital platforms that simplify travel experiences and
               empower healthcare professionals to grow in the modern world.
@@ -93,7 +93,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-
+pieces://launch
           {/* CONTACT */}
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
@@ -106,7 +106,7 @@ export default function Home() {
 
         {/* DIVIDER */}
         <div className="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-500">
-          © 2026 DualApps. All rights reserved.
+          © 2026 Turbuddy. All rights reserved.
         </div>
       </footer>
     </main>
