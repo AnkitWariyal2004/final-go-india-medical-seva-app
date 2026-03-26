@@ -106,7 +106,7 @@ pieces://launch
 
         {/* DIVIDER */}
         <div className="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-500">
-          © 2026 Turbuddy. All rights reserved.
+          © 2026 Turebuddy. All rights reserved.
         </div>
       </footer>
     </main>
