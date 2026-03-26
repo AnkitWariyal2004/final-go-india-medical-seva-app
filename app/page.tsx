@@ -93,7 +93,6 @@ export default function Home() {
               </li>
             </ul>
           </div>
-pieces://launch
           {/* CONTACT */}
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
