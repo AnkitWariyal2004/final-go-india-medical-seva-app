@@ -26,7 +26,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
           {/* BRAND */}
           <div>
-            <h3 className="text-white text-xl font-bold mb-4">Truebuddy</h3>
+            <h3 className="text-white text-xl font-bold mb-4">Truebuddy LLB</h3>
             <p className="text-gray-400 leading-relaxed">
               We build digital platforms that simplify travel experiences and
               empower healthcare professionals to grow in the modern world.
